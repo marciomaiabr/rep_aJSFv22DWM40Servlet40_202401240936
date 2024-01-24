@@ -17,7 +17,7 @@ public class Teste01MB {
 	}
 
 	public long getVersion() {
-		return 202401240745l;
+		return 202401241023l;
 	}
 
 	@PreDestroy
