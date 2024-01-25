@@ -20,18 +20,6 @@ public class Teste01MB {
 		return 202401241023l;
 	}
 
-	public void test() {
-		System.out.println("Teste01MB.test()");
-
-		try {
-			Thread.sleep(3000);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
-		System.out.println("/Teste01MB.test()");
-	}
-
 	@PreDestroy
 	public void preDestroy() {
 		System.out.println("Teste01MB.preDestroy()");

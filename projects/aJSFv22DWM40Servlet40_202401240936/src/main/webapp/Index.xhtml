@@ -7,21 +7,9 @@
 	<h:head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>JSF 2.2</title>
-<script type="text/javascript">
-	function onStatusChangeMM(data) {
-		console.log(data);
-		var spinner = document.getElementById("frm:spinner");
-		var status = data.status;
-		if (status === "begin") {
-			spinner.style.display = "inline";
-		} else {
-			spinner.style.display = "none";
-		}
-	}
-</script>
 	</h:head>
 	<h:body>
-		<h:form id="frm">
+		<h:form>
 			<h1>Bem vindo...</h1>
 			<hr />
 			<h:outputText value="MBVersion: #{teste01MB.version}" />
@@ -29,17 +17,6 @@
 			<h:outputText value="XHTMLVersion: 202401241025" />
 			<hr />
 			<br />
-			<h:graphicImage id="spinner" library="imagens" name="carregando.gif" style="display: none" />
-			<br />
-			<h:commandButton value="Test..." action="#{teste01MB.test}" >
-				<f:ajax onevent="onStatusChangeMM" />
-			</h:commandButton>
-			<br />
-
-	para q ser o jsf.ajax.addOnEvent(onStatusChangeMM); ?
-
-	como pegar qdo net::ERR_CONNECTION_REFUSED
-
 		</h:form>
 	</h:body>
 </html>
