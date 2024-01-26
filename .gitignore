@@ -5,6 +5,9 @@ target/
 */target/*
 */target/**
 
+# bootstrap files
+**/bootstrap/*
+
 # Log file
 *.log
 
