@@ -20,6 +20,10 @@ public class Teste01MB {
 		return 202401241023l;
 	}
 
+	public void test() {
+		System.out.println("Teste01MB.test()");
+	}
+
 	@PreDestroy
 	public void preDestroy() {
 		System.out.println("Teste01MB.preDestroy()");
