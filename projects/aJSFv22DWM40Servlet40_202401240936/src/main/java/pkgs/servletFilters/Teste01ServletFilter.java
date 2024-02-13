@@ -13,6 +13,10 @@ import javax.servlet.annotation.WebFilter;
 @WebFilter(servletNames = { "Faces Servlet" })
 public class Teste01ServletFilter implements Filter {
 
+	public Teste01ServletFilter() {
+		System.out.println("Teste01ServletFilter.Teste01ServletFilter()");
+	}
+
 	@Override
 	public void init(FilterConfig config) throws ServletException {
 		System.out.println("Teste01ServletFilter.init()");
